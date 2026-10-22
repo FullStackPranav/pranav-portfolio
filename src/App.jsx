@@ -429,10 +429,10 @@ function ResumeView({ setView }) {
         <div className="resume-section-heading">
           <div>
             <Eyebrow>THE JOURNEY SO FAR</Eyebrow>
-            <h2>Experience that connects <span>people & systems.</span></h2>
+            <h2>Experience </h2>
             <p className="resume-section-description">
               From employee operations to software development and automation.
-              Select a role to explore the details.
+              Select a role to view details.
             </p>
           </div>
           <span className="resume-section-count">03 ROLES</span>
