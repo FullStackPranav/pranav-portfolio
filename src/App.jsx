@@ -583,7 +583,7 @@ function ProfilePlaceholder() {
       <div className="profile-card">
         <div className="profile-topline">
           <span className="profile-live-dot" />
-          <span>INTRODUCING</span>
+          {/* <span>INTRODUCING</span> */}
           <span className="profile-index">01 / 01</span>
         </div>
 
@@ -601,7 +601,7 @@ function ProfilePlaceholder() {
         <div className="profile-bottom">
           <div>
             <span className="profile-small-label">YOUR OPERATIONS PARTNER</span>
-            <p>Pranav T Pradeep</p>
+            {/* <p>Pranav T Pradeep</p> */}
           </div>
           <span className="profile-sparkle" aria-hidden="true">✳</span>
         </div>
