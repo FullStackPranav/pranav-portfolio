@@ -1,6 +1,7 @@
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
+import "./premium.css";
 
 // Keep your contact information and social links here.
 const CONTACT = {
@@ -633,9 +634,9 @@ function Hero() {
         <Eyebrow>REMOTE OPERATIONS SUPPORT <span className="eyebrow-divider">/</span> INDIA</Eyebrow>
 
         <h1>
-          Reliable operations.
-          <br />
-          <span>Less work</span> on your plate.
+          <span className="headline-line">Behind every</span>
+          <span className="headline-line">good business.</span>
+          <span className="headline-line headline-accent">Better operations.</span>
         </h1>
 
         <p className="hero-description">
@@ -890,9 +891,32 @@ function Footer({ setView }) {
 export default function App() {
   const [view, setView] = useState("services");
 
+  useEffect(() => {
+    const sections = document.querySelectorAll('.section-block, .resume-experience-section, .resume-lower-grid, .resume-cta-panel');
+    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    sections.forEach((section) => {
+      section.classList.add('scroll-reveal');
+      observer.observe(section);
+    });
+    return () => observer.disconnect();
+  }, [view]);
+
   return (
     <div className="app">
-      <div className="ambient-glow" aria-hidden="true" />
+      <div className="opening-sequence" aria-hidden="true">
+        <span className="opening-monogram">P<span>.</span></span>
+        <span className="opening-caption">PRANAV T PRADEEP / OPERATIONS</span>
+        <span className="opening-rule" />
+      </div>
+      <div className="ambient-glow" aria-hidden="true"><span /><span /><span /></div>
       <Header view={view} setView={setView} />
 
       {view === "resume" ? (
