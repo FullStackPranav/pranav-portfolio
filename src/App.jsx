@@ -550,7 +550,7 @@ function Header({ view, setView }) {
           type="button"
           className={view === "services" ? "switch-option active" : "switch-option"}
           aria-pressed={view === "services"}
-          onClick={() => setView("services")}jpg
+          onClick={() => setView("services")}
         >
           Services
         </button>
@@ -576,9 +576,9 @@ function Eyebrow({ children, className = "" }) {
   );
 }
 
-function ProfilePlaceholder() {
+function ProfilePortrait() {
   return (
-    <div className="profile-wrap" aria-label="Profile photograph placeholder">
+    <div className="profile-wrap" aria-label="Profile photograph">
       <div className="profile-backdrop" />
       <div className="profile-card">
         <div className="profile-topline">
@@ -664,7 +664,7 @@ function Hero() {
         </div>
       </div>
 
-      <ProfilePlaceholder />
+      <ProfilePortrait />
 
       <div className="hero-index" aria-hidden="true">
         <span>01</span><span className="index-line" /><span>04</span>
