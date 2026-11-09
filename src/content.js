@@ -71,7 +71,12 @@ const resumeExperience = [
       "Maintained SOPs, runbooks, deployment guides and operational handover documentation.",
       "Coordinated with development, infrastructure and business stakeholders to communicate incidents and escalations.",
     ],
-    skills: ["UiPath, ", "RPA Genie, ", "Azure Devops, ","SQL Server Management Studio "],
+    skills: [
+      "UiPath, ",
+      "RPA Genie, ",
+      "Azure Devops, ",
+      "SQL Server Management Studio ",
+    ],
   },
   {
     id: "camerinfolks",
@@ -88,7 +93,7 @@ const resumeExperience = [
       "Troubleshot issues across frontend, backend and database layers using logs and traces.",
       "Supported testing, deployment, technical documentation and operational handovers.",
     ],
-    skills: ["MERN Stack, ",  "JavaScript, ", "Git/GitHub, "],
+    skills: ["MERN Stack, ", "JavaScript, ", "Git/GitHub, "],
   },
   {
     id: "sutherland",
@@ -135,7 +140,15 @@ const resumeEducation = [
 const resumeSkillGroups = [
   {
     title: "Enterprise systems",
-    skills: ["Salesforce", "PeopleSoft", "Kronos (MyTime)", "MS Office","Sim Ticketing","Panaroma","Azure devops"],
+    skills: [
+      "Salesforce",
+      "PeopleSoft",
+      "Kronos (MyTime)",
+      "MS Office",
+      "Sim Ticketing",
+      "Panaroma",
+      "Azure devops",
+    ],
   },
   {
     title: "Automation & development",
@@ -154,6 +167,10 @@ const resumeSkillGroups = [
   },
 ];
 
-
-export { CONTACT, services, resumeExperience, resumeEducation, resumeSkillGroups };
-
+export {
+  CONTACT,
+  services,
+  resumeExperience,
+  resumeEducation,
+  resumeSkillGroups,
+};

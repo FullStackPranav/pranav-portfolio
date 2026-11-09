@@ -67,5 +67,4 @@ function Icon({ name, size = 22 }) {
   return <svg {...common}>{paths[name] ?? paths.arrow}</svg>;
 }
 
-
 export default Icon;
